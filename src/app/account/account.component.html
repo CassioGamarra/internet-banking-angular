@@ -1,0 +1,12 @@
+<h2>Minha Conta</h2>
+<h3>Saldo: {{ balance }}</h3>
+<input type="number" id="value" name="value" min="1" placeholder="Valor...">
+<br/>
+<button (click)="deposit()">Depositar</button>
+<app-withdraw
+    [balance] = "balance"
+    (withdraw) = "onWithdraw()"
+> 
+</app-withdraw>
+
+
