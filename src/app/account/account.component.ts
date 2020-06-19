@@ -39,7 +39,7 @@ export class AccountComponent {
     } else {
       this.bankService.deposit(value);
       this.balance = this.bankService.getBalance();
-      window.alert('Deposito realizado com sucesso!');
+      window.alert('Depósito realizado com sucesso!');
       (<HTMLInputElement>document.getElementById('value')).value = 'Valor...';
     }
   }
